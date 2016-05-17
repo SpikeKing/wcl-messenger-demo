@@ -1,5 +1,7 @@
 # Android 进程使用 Messenger 通信
 
+> 欢迎探讨技术, Follow我的GitHub: https://github.com/SpikeKing 
+
 进程之间不能共享内存数据, 但是可以进行通信, 除了简单的[Intent通信](http://www.wangchenlong.org/2016/05/07/1605/072-serial-object/), 也可以使用Messenger, Messenger基于AIDL实现, 顺序执行, 不支持并发. 为了区分通信的始末, 我们暂定发送数据是客户端, 接收数据是服务端. 本文介绍Messenger的使用方式, 含有[Demo](https://github.com/SpikeKing/wcl-messenger-demo).
 
 ![Messenger](https://raw.githubusercontent.com/SpikeKing/wcl-messenger-demo/master/article/messenger.png)
